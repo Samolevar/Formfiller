@@ -1,0 +1,30 @@
+<%= form_tag ('/index') do %>
+
+  <%= label_tag 'Дата оформления'%>
+  <%= text_field_tag 'date' %>
+ 
+  <%= label_tag 'Информация о ЗАКАЗЧИКЕ'%>
+  <%= text_field_tag 'fio' %>
+
+  <%= label_tag 'Информация о ТУРИСТАХ'%>
+  <%= text_field_tag 'info' %>
+
+  <%= label_tag 'Даты поездки'%>
+  <%= text_field_tag 'traveldata' %>
+
+  <%= label_tag 'Страна'%>
+  <%= text_field_tag 'strana' %>
+
+  <%= label_tag 'Курорт'%>
+  <%= text_field_tag 'kurort' %>
+
+  <%= label_tag 'Название отеля'%>
+  <%= text_field_tag 'hotelname' %>
+
+  <%= label_tag 'Категория отеля'%>
+  <%= text_field_tag 'rating' %>
+
+  <%= submit_tag "Create form" %>
+<% end %>
+<%= params.inspect %>
+  
